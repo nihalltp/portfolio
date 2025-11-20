@@ -1,0 +1,292 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+/* ===========================
+GLOBAL
+=========================== */
+body{
+background: linear-gradient(90deg,rgb(231, 230, 233) 0%, rgb(209, 186, 71) 40%, rgb(240, 204, 23) 100%);
+color: rgb(0, 0, 0);
+}
+
+/* ===========================
+HEADER
+=========================== */
+header{
+width: 100%;
+padding: 20px;
+background: linear-gradient(90deg,rgb(241, 238, 33) 0%, rgb(209, 186, 71) 40%, rgb(255, 255, 255) 100%);
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+header a{
+color: rgb(0, 0, 0);
+text-decoration: none;
+margin: 10px;
+}
+
+header a:hover{
+color: rgb(64, 162, 243);
+}
+
+/* ===========================
+HERO SECTION
+=========================== */
+.hero-container{
+margin-top: 150px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+padding: 20px;
+}
+
+.left-container{
+width: 350px;
+text-align: center;
+}
+
+.left-container img{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+}
+
+.right-container{
+width: 450px;
+text-align: center;
+}
+
+.right-container h1{
+font-size: 40px;
+}
+
+.right-container p{
+margin-top: 20px;
+}
+
+.right-container button{
+padding: 15px 25px;
+margin-top: 20px;
+border-radius: 20px;
+border: none;
+background: linear-gradient(90deg,rgb(33, 30, 37) 0%, rgb(209, 186, 71) 40%, rgb(33, 31, 24) 100%);
+color: white;
+cursor: pointer;
+}
+
+.right-container button:hover{
+background-color: black;
+color: white;
+}
+
+/* ===========================
+ABOUT SECTION
+=========================== */
+#about{
+margin-top: 100px;
+}
+
+.about{
+background: linear-gradient(90deg,rgb(33, 30, 37) 0%, rgb(209, 186, 71) 40%, rgb(33, 31, 24) 100%);
+border-radius: 30px;
+text-align: center;
+padding: 20px;
+margin: 20px;
+}
+
+.about p{
+color: #fff;
+}
+
+/* ===========================
+CONTACT
+=========================== */
+.contact{
+text-align: center;
+background-color: black;
+color: white;
+border-radius: 20px;
+width: 300px;
+margin: auto;
+height: auto;
+padding: 20px;
+}
+
+.contact h4{
+background: linear-gradient(90deg,rgb(33, 30, 37) 0%, rgb(209, 186, 71) 40%, rgb(33, 31, 24) 100%);
+margin: 10px;
+border-radius: 8px;
+}
+
+/* ===========================
+FOOTER
+=========================== */
+.footer{
+background-color: black;
+color: white;
+padding: 20px;
+margin-top: 20px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.left-footer{
+margin-left: 50px;
+text-align: center;
+}
+
+.left-footer h4{
+color: yellow;
+}
+
+.left-footer img{
+width: 80px;
+height: 80px;
+border-radius: 50%;
+}
+
+.social-icons{
+display: flex;
+gap: 15px;
+margin-top: 10px;
+}
+
+.social-icons img{
+width: 25px;
+height: 25px;
+}
+
+.center-footer{
+text-align: center;
+}
+
+.center-footer h4{
+color: yellow;
+}
+
+.center-footer nav a{
+display: block;
+text-decoration: none;
+margin-top: 10px;
+color: white;
+}
+
+/* ===========================
+SKILLS
+=========================== */
+:root{
+--icon-size: 44px;
+--label-font: 13px;
+}
+
+.fa-skills{
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+align-items:center;
+justify-content: center;
+margin-top: 50px;
+}
+
+.fa-skills .skill{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-decoration:none;
+color: #222;
+width:88px;
+padding:10px 6px;
+border-radius:10px;
+transition:transform .18s ease, box-shadow .18s ease;
+background: #fff;
+box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.fa-skills .skill i{
+font-size: var(--icon-size);
+line-height:1;
+margin-bottom:6px;
+}
+
+.fa-skills .skill span{
+font-size: var(--label-font);
+color: #333;
+}
+
+/* brand colors */
+.skill.html i{ color:#E44D26; }
+.skill.css i { color:#1572B6; }
+.skill.js i  { color:#F7DF1E; }
+.skill.react i{ color:#61DAFB; }
+
+.fa-skills .skill:hover{
+transform: translateY(-6px);
+box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+
+/* ===========================
+RESPONSIVE DESIGN
+=========================== */
+
+/* Tablets */
+@media (max-width: 900px){
+.hero-container{
+flex-direction: column;
+text-align: center;
+}
+
+.right-container, .left-container{
+width: 100%;
+}
+
+header{
+flex-direction: column;
+gap: 10px;
+}
+
+.footer{
+flex-direction: column;
+gap: 20px;
+text-align: center;
+}
+}
+
+/* Mobile */
+@media (max-width: 600px){
+
+.right-container h1{
+font-size: 26px;
+}
+
+.left-container img{
+width: 220px;
+height: 220px;
+}
+
+.fa-skills .skill{
+width: 75px;
+}
+
+.contact{
+width: 90%;
+}
+
+.footer{
+padding: 15px;
+}
+
+.left-footer img{
+width: 65px;
+height: 65px;
+}
+}
