@@ -163,6 +163,8 @@ margin-top: 10px;
 .social-icons img{
 width: 25px;
 height: 25px;
+transition:transform .18s ease, box-shadow .18s ease;
+box-shadow: 0 6px 14px rgb(39, 2, 2);
 }
 
 .social-icons img:hover{
@@ -209,7 +211,6 @@ align-items:center;
 text-decoration:none;
 color: #fd0101;
 width:50px;
-
 border-radius:10px;
 transition:transform .18s ease, box-shadow .18s ease;
 box-shadow: 0 6px 14px rgb(255, 255, 255);
@@ -295,14 +296,14 @@ height: 65px;
 }
 }
 
-.skills{
+#skills{
 background: linear-gradient(90deg,rgb(33, 30, 37) 0%, rgb(209, 186, 71) 40%, rgb(33, 31, 24) 100%);
 width: 300px;
 border-radius: 30px;
 text-align: center;
-padding: 10px;
+padding: 30px;
 margin: auto;
-height: auto
+height: auto;
 }
 
 
