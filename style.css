@@ -83,8 +83,7 @@ cursor: pointer;
 }
 
 .right-container button:hover{
-background-color: black;
-color: white;
+color: rgb(0, 0, 0);
 }
 
 /* ===========================
@@ -166,6 +165,11 @@ width: 25px;
 height: 25px;
 }
 
+.social-icons img:hover{
+transform: translateY(-6px);
+box-shadow: 0 12px 24px rgb(56, 32, 32);
+}
+
 .center-footer{
 text-align: center;
 }
@@ -185,7 +189,7 @@ color: white;
 SKILLS
 =========================== */
 :root{
---icon-size: 44px;
+--icon-size: 30px;
 --label-font: 13px;
 }
 
@@ -203,19 +207,19 @@ display:flex;
 flex-direction:column;
 align-items:center;
 text-decoration:none;
-color: #222;
-width:88px;
-padding:10px 6px;
+color: #fd0101;
+width:50px;
+
 border-radius:10px;
 transition:transform .18s ease, box-shadow .18s ease;
-background: #fff;
-box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+box-shadow: 0 6px 14px rgb(255, 255, 255);
 }
 
 .fa-skills .skill i{
 font-size: var(--icon-size);
-line-height:1;
-margin-bottom:6px;
+line-height:30px;
+padding: 2px;
+margin-bottom:3px;
 }
 
 .fa-skills .skill span{
@@ -274,7 +278,7 @@ height: 220px;
 }
 
 .fa-skills .skill{
-width: 75px;
+width: 70px;
 }
 
 .contact{
@@ -290,3 +294,15 @@ width: 65px;
 height: 65px;
 }
 }
+
+.skills{
+background: linear-gradient(90deg,rgb(33, 30, 37) 0%, rgb(209, 186, 71) 40%, rgb(33, 31, 24) 100%);
+width: 300px;
+border-radius: 30px;
+text-align: center;
+padding: 10px;
+margin: auto;
+height: auto
+}
+
+
